@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Happy Birthday Kandha</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">>
+<style>
+
+body{
+margin:0;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:linear-gradient(135deg,#ffe6f0,#fff0f5);
+font-family:'Satisfy',cursive;
+overflow:hidden;
+}
+
+/* Sparkles */
+body::before{
+content:"✨ ✨ 💫 ✨ 💖 ✨ 💫 ✨";
+position:absolute;
+font-size:40px;
+animation: sparkle 6s linear infinite;
+opacity:0.4;
+}
+
+@keyframes sparkle{
+0%{transform:translateY(100vh);}
+100%{transform:translateY(-100vh);}
+}
+
+/* Button */
+.openBtn{
+padding:15px 30px;
+font-size:22px;
+background:#ff4d88;
+color:white;
+border:none;
+border-radius:30px;
+cursor:pointer;
+box-shadow:0 0 15px pink;
+transition:0.3s;
+}
+
+.openBtn:hover{
+transform:scale(1.1);
+}
+
+/* Card */
+.card{
+position:absolute;
+width:80%;
+max-width:700px;
+height:80%;
+background:white;
+border-radius:20px;
+box-shadow:0 0 30px rgba(0,0,0,0.2);
+padding:30px;
+overflow:auto;
+transform:scale(0);
+transition:0.7s ease;
+color:#cc0066;
+font-size:28px;
+}
+
+.card.show{
+transform:scale(1);
+}
+
+h1{
+text-align:center;
+color:#ff3385;
+}
+
+</style>
+</head>
+
+<body>
+
+<button class="openBtn" onclick="openCard()">Open Your Surprise 💝</button>
+
+<div class="card" id="birthdayCard">
+
+<h1>Happy Birthday Kandha 🥳❤</h1>
+
+<p>
+May all u r dreams come true 🤞🏻💫 <br><br>
+
+Yavaglu nagtha nagtha kuch kuch agi iru ma 🥰✨  
+No matter what.. I will always be with you kandha 🫀💞  
+Even when the whole world is against you.. just know I will always be by ur side 🤍  
+
+When the world treats u in a cruel manner..  
+Run and come back to me.. I will always be there for u 🫂💗  
+
+"Swalpa jana kelthare nin avlna nenpmadkolalva antha..  
+Marthogidre alva nenp madkoloke..  
+Usr ale jothe agirovrna maryok agutha" 🥺✨  
+
+Yesht dina ayth ala ithara yela lines ninig heli...  
+U will always be my first daughter 🫂💖  
+
+U r the best part of my worst life 🥹💞  
+Those laughs.. Those fights.. Those cries are irreplaceable 🤞🏻✨  
+
+I still remember...  
+Nanig hushar ila antha nin bandhu athidu 🥺  
+Nav ibru chik maklu thara jagla adkondu 💕  
+Nin nan kay parchirodhu...  
+Nan odtha ange malkondaga...  
+Nan kayali ididh watch remove madi bedsheet hodsi malgsthididu 🥹  
+
+Innu thumba...  
+Nanig life ali time machine sikki hindhe hogbeku andre...  
+Nan yar jothe jagla adirodhunu sari madkolala...  
+Nin jothe spend madidh time na mathe spend madthini 🤍  
+Because that's the bestest... Especially that jaint wheel ❤️‍🩹✨  
+
+We may don't talk daily...  
+Some bonds doesn't need daily connections 💞  
+When heart is truly connected 💓  
+
+I always regret... nanig yak yela chik vishyanu nenp iruthe antha...  
+Adre nin vishyak bandre I feel blessed kandha 🥺💖  
+
+Literally nin ildhe hogidre I would rate my rvk life in negative...  
+U were the best 🫀✨  
+
+If I earn enough...  
+This mommy is going to buy u a mocking bird 🤞🏻🫂💗  
+
+U r literally a part of me 🫀  
+Be happy and blessed for all the things you have ma 💞  
+
+Let Ganesha 🙏🏻 give all the strength to u to face the world ❤  
+Arogya chanag nodko... Husharu...  
+
+"If u ever miss me and feel like crying...  
+Just see the mirror and smile...  
+Because I will always be hiding in u r smile" ❤✨  
+
+Once again happy 19 kandha 🥳💖  
+Luv u cho cho cho much as always 😘✨  
+
+</p>
+
+</div>
+
+<script>
+
+function openCard(){
+document.querySelector('.openBtn').style.display="none";
+document.getElementById('birthdayCard').classList.add('show');
+}
+
+</script>
+
+</body>
+</html>

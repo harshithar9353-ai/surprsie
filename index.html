@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Midnight Surprise</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+<style>
+body{
+margin:0;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:
+radial-gradient(#fdf6f0 1px, transparent 1px),
+radial-gradient(#f7efe7 1px, transparent 1px);
+background-size:20px 20px;
+font-family:'Dancing Script',cursive;
+overflow:hidden;
+}
+
+.container{
+text-align:center;
+color:#b3002d;
+}
+
+.line{
+opacity:0;
+font-size:40px;
+margin:15px;
+animation:fadeIn 1.5s forwards;
+}
+
+.line:nth-child(1){animation-delay:1s;}
+.line:nth-child(2){animation-delay:3s;}
+.line:nth-child(3){animation-delay:5s;}
+.line:nth-child(4){animation-delay:7s;}
+
+button{
+opacity:0;
+margin-top:30px;
+padding:12px 35px;
+font-size:20px;
+border:none;
+border-radius:30px;
+background:#b3002d;
+color:white;
+cursor:pointer;
+animation:fadeIn 2s forwards;
+animation-delay:9s;
+}
+
+@keyframes fadeIn{
+to{opacity:1;}
+}
+
+.sparkle{
+position:absolute;
+width:6px;
+height:6px;
+background:#ffd1dc;
+border-radius:50%;
+animation:twinkle 4s infinite alternate;
+}
+
+@keyframes twinkle{
+from{opacity:0.2;}
+to{opacity:1;}
+}
+</style>
+</head>
+<body>
+
+<div class="sparkle" style="top:20%;left:30%;"></div>
+<div class="sparkle" style="top:70%;left:60%;"></div>
+<div class="sparkle" style="top:40%;left:80%;"></div>
+
+<div class="container">
+<div class="line">Hey Kanda… ❤️</div>
+<div class="line">It’s 12 AM now… ✨</div>
+<div class="line">And someone very special was born today…</div>
+<div class="line">Can you guess who? 💌</div>
+<button onclick="location.href='page2.html'">Click Here</button>
+</div>
+
+</body>
+</html>
